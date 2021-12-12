@@ -1,0 +1,54 @@
+/* pages/receive/receive.wxss */
+
+.input-item{
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 10rpx;
+}
+
+.input{
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid black;
+  font-size: 30rpx;
+
+}
+.sub{
+  height: 300rpx;
+  width: 600rpx;
+  border: 1rpx black solid; 
+  overflow-y: scroll;
+  overflow-x:scroll ;
+
+}
+
+/* https://www.jb51.net/article/156283.htm */
+.table {
+  border: 0px solid darkgray;
+ }
+ .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+ }
+ .td {
+  width:40%;
+  justify-content: center;
+  text-align: center;
+ }
+ .bg-w{
+  background: snow;
+ }
+ .bg-g{
+  background: #E6F3F9;
+ }
+ .th {
+  width: 40%;
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+ }

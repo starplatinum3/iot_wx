@@ -1,0 +1,26 @@
+
+<view class="container">
+  <view class="input-item">
+    <view>topic: </view>
+    <input class="input" placeholder="请输入主题" bindinput="TopicInput" value="{{topic}}" />
+  </view>
+
+
+  <view class="input-item">
+    <view>R </view>
+    <input class="input" placeholder="R" bindinput="rInput" value="{{rgb.r}}" />
+  </view>
+
+  <view class="input-item">
+    <view>G </view>
+    <input class="input" placeholder="G" bindinput="gInput" value="{{rgb.g}}" />
+  </view>
+
+  <view class="input-item">
+    <view>B</view>
+
+    <input class="input" placeholder="B" bindinput="bInput" value="{{rgb.b}}" />
+  </view>
+
+  <button style="margin:20rpx" bindtap="sendmqtt" type="primary">发送</button>
+</view>
