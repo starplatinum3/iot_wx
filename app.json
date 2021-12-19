@@ -1,9 +1,14 @@
 {
   "pages":[
     "pages/connect/connect",
+  
     "pages/pub/pub",
+  
     "pages/sub/sub",
-    "pages/rgb/pub"
+    "pages/rgb/pub",
+    "pages/bar/bar",
+    "pages/bar/index",
+    "pages/gauge/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -22,12 +27,29 @@
       "text": "Pub",
       "iconPath": "icon/emqx-grey.jpg",
       "selectedIconPath": "icon/emqx.jpg"
-    },{
+    },
+    {
       "pagePath":  "pages/rgb/pub",
       "text": "PubRgb",
       "iconPath": "icon/emqx-grey.jpg",
       "selectedIconPath": "icon/emqx.jpg"
-    }]
+    },
+    {
+  
+      "pagePath":  "pages/bar/index",
+      "text": "bar",
+      "iconPath": "icon/emqx-grey.jpg",
+      "selectedIconPath": "icon/emqx.jpg"
+    },
+    {
+  
+      "pagePath":  "pages/gauge/index",
+      "text": "gauge",
+      "iconPath": "icon/emqx-grey.jpg",
+      "selectedIconPath": "icon/emqx.jpg"
+    }
+  
+  ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

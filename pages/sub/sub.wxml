@@ -23,7 +23,7 @@
     </view>
     <!-- wx:key="{[code]}" does not look like a valid key name. -->
     <block wx:for="{{listData}}" wx:key="{[code]}">
-    <!-- 偶数和奇数的 显示不一样 -->
+      <!-- 偶数和奇数的 显示不一样 -->
       <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
         <view class="td">{{item.temp}}</view>
         <view class="td">{{item.hum}}</view>
