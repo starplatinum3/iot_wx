@@ -4,13 +4,24 @@ const app = getApp()
 var mqtt = require('../../utils/mqtt.js');
 
 Page({
+
+  
   // data: {
   //   topic:"CJP/msg",
   //   msg:"Hello,IoT"
   // },
   data: {
-    topic:"MQP/msg",
-    msg:"Hello,IoT"
+    // topic:"MQP/msg",
+    // topic:"ZUCC-MQP/oled",
+    topic:"ZUCC-IOTMQP/oled",
+    // msg:"Hello,IoT",
+    msg:"mqp 31910077"
+  },
+
+  toAdxl(){
+    wx.navigateTo({
+      url: '../adxl/index'
+    });
   },
 
   //事件处理函数

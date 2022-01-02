@@ -105,7 +105,10 @@ Page({
     button_type: 'primary',
     sub_text: '订阅',
     sub_state: false,
-    topic: 'MQP/msg',
+    // topic: 'MQP/msg',
+    // topic: 'IOT-MQP/msg',
+    // topic: 'IOT-MQP/msg',
+    topic: "ZUCC-IOTMQP/esp",
     msg: ''
   },
 
@@ -113,6 +116,56 @@ Page({
     this.setData({
       topic: e.detail.value
     })
+  },
+
+  toAdxlMqtt(){
+    wx.navigateTo({
+      url: '../adxl_mqtt/index'
+    });
+  },
+
+  to_line_acc(){
+    // var arr=[]
+    // arr.push()
+    // arr.pop()
+    // js  列表 弹出 第一个
+    // arr.shift();
+    wx.navigateTo({
+      url: '../line_acc/index'
+    });
+  },
+  toConnect(){
+    wx.navigateTo({
+      url: '../connect/connect'
+    });
+  },
+  
+  
+  sendToDb:function (hum,temp){
+    wx.request({
+      url: app.globalData.baseUrl+"/hum/save",
+      // url: 'https://baidu.com',
+      // url: 'http://baidu.com',
+      method:"POST",
+      data: {
+          // id:id
+          "createTime": Date(),
+          "hum": hum,
+          "temp": temp
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function(res) {
+      console.log("res");
+      console.log(res);
+      }
+    })
+  },
+  toRotate(){
+    wx.navigateTo({
+      url: '../rotate/index'
+    });
   },
   //接收信息函数
   mqttsub: function () {
@@ -155,11 +208,18 @@ Page({
        console.log(receive);
       
        var listData=[{"code":"01","temp": receive.temp,"hum": receive.hum,}]
+      //  var listData=  that.data.listData
+      //  listData.push({"code":"01","temp": receive.temp,"hum": receive.hum,})
+      //  that.data.listData.push({"code":"01","temp": receive.temp,"hum": receive.hum,})
+      console.log("listData");
+      console.log(listData);
       that.setData({
         listData:listData,
         // msg: packet.payload + '<br>' + that.data.msg
         msg: payload + '<br>' + that.data.msg
       })
+
+      // that.sendToDb(receive.hum,receive.temp)
     })
   }
 })

@@ -1,0 +1,8 @@
+
+<view class="container">
+  <!-- <view animation="{{animation}}" class="view">我在做动画</view> -->
+  <!-- 微信小程序 图片路径 -->
+  <image  animation="{{animation}}" class="view" src="../../icon/miku_fang.jpg"></image>
+</view>
+<button type="primary" bindtap="rotate">旋转</button>
+<button type="primary" bindtap="translateY">translateY</button>

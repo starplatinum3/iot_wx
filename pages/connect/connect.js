@@ -13,7 +13,27 @@ Page({
   //     password:null,
   //     tips:''
   // },
+  toAdxl(){
+    wx.navigateTo({
+      url: '../adxl/index'
+    });
+  },
+  toRotate(){
+    wx.navigateTo({
+      url: '../rotate/index'
+    });
+  },
 
+  toAdxlMqtt(){
+    wx.navigateTo({
+      url: '../adxl_mqtt/index'
+    });
+  },
+  toLine(){
+    wx.navigateTo({
+      url: '../line/index'
+    });
+  },
   data: {
     address:"wx://139.196.8.79",  
     port:8083,

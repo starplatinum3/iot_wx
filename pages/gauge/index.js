@@ -180,7 +180,9 @@ Page({
     button_type: 'primary',
     sub_text: '订阅',
     sub_state: false,
-    topic: 'MQP/msg',
+    // topic: 'MQP/msg',
+    // topic: 'ZUCC-MQP/esp',
+    topic: 'ZUCC-IOTMQP/esp',
     msg: ''
   },
 
@@ -188,6 +190,28 @@ Page({
    this. mqttsub();
   },
 
+
+  sendToDb:function (hum,temp){
+    wx.request({
+      url: app.globalData.baseUrl+"/hum/save",
+      // url: 'https://baidu.com',
+      // url: 'http://baidu.com',
+      method:"POST",
+      data: {
+          // id:id
+          "createTime":new Date(),
+          "hum": hum,
+          "temp": temp
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function(res) {
+      console.log("res");
+      console.log(res);
+      }
+    })
+  },
 
   //接收信息函数
   mqttsub: function () {
@@ -238,6 +262,11 @@ Page({
         // // msg: packet.payload + '<br>' + that.data.msg
         // msg: payload + '<br>' + that.data.msg
       })
+      var doSendDb=false
+      if(doSendDb){
+        that.sendToDb(receive.hum,receive.temp)
+      }
+    
     })
   }
 });

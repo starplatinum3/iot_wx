@@ -38,4 +38,9 @@
     </block>
   </view>
 
+  <button  bindtap="toAdxlMqtt">toAdxlMqtt</button>
+  <button  bindtap="to_line_acc">to_line_acc</button>
+  <button  bindtap="toConnect">toConnect</button>
+
+  <button  bindtap="toRotate">toRotate</button>
 </view>

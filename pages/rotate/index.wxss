@@ -1,0 +1,36 @@
+/**index.wxss**/
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+/**app.wxss**/
+.container {
+
+  /* background: #000; */
+  /* background: blue; */
+  /* background: yellow; */
+  display: flex;
+  align-items: center;
+  /* width: 400px;
+  height: 400px; */
+  width: 100%;
+  /* height:  100%; */
+  /* height: 400px; */
+  height: 510px;
+  justify-content: center;
+  /* 上下 居中 */
+  /* 但是他在 右边一点 */
+ 
+} 
+
+.view{
+  /* width: 20px;
+  height: 20px; */
+  /* width: 100px;
+  height: 100px; */
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  display: flex;
+  background-color:teal ;
+}

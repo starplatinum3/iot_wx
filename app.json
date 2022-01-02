@@ -8,7 +8,13 @@
     "pages/rgb/pub",
     "pages/bar/bar",
     "pages/bar/index",
-    "pages/gauge/index"
+    "pages/gauge/index",
+    "pages/line/index",
+    "pages/adxl/index",
+    "pages/adxl_mqtt/index",
+    "pages/line_acc/index",
+    "pages/rotate/index"
+
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -48,7 +54,6 @@
       "iconPath": "icon/emqx-grey.jpg",
       "selectedIconPath": "icon/emqx.jpg"
     }
-  
   ]
   },
   "style": "v2",

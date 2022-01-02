@@ -1,0 +1,19 @@
+{
+  "name": "mqp-iot",
+  "version": "1.0.0",
+  "description": "// \"pagePath\":  \"pages/bar/index\",",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/starplatinum111/temp_wx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "got": "^12.0.0",
+    "mini-color-picker": "^0.1.2"
+  }
+}

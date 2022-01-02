@@ -23,6 +23,7 @@
 
 /* https://www.jb51.net/article/156283.htm */
 .table {
+  width: 100%;
   border: 0px solid darkgray;
  }
  .tr {

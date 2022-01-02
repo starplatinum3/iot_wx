@@ -21,4 +21,11 @@
     bindinput="PswInput" value="{{passsword}}"/></view>
     <button style="margin:20rpx" bindtap="connectmqtt" type="primary">连接</button>
     <view>{{tips}}</view>
+
+<!-- 微信 按钮点击 跳转 -->
+<button  bindtap="toLine">去线型图</button>
+<button  bindtap="toAdxl">adxl</button>
+<button  bindtap="toAdxlMqtt">toAdxlMqtt</button>
+<button  bindtap="toRotate">toRotate</button>
+    <!-- <image src="../../img/icons/gauge.png" mode="aspectFit" bindtap="open" data-chart="{{chartEnd}}"></image> -->
 </view>

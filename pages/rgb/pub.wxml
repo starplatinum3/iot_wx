@@ -23,4 +23,10 @@
   </view>
 
   <button style="margin:20rpx" bindtap="sendmqtt" type="primary">发送</button>
+
+  <!-- index.wxml -->
+<view style="background:{{rgbColor}};width:100px;height:24px;" bindtap="toPick"></view>
+<color-picker bindchangeColor="pickColor" initColor="{{rgbColor}}" show="{{pick}}" />
+
+
 </view>

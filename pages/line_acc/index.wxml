@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+  <view>大概{{aboutTime}}时间的</view>
+  <view>温湿度折线图</view>
+</view>

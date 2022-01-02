@@ -1,3 +1,6 @@
+
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "color-picker":"mini-color-picker/color-picker" 
+  }
 }
